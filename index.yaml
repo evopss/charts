@@ -7,7 +7,7 @@ entries:
           description: Global affinity configuration
     apiVersion: v2
     appVersion: v2.6.2
-    created: "2023-02-18T17:35:44.328107963Z"
+    created: "2023-02-18T18:25:40.649705244Z"
     dependencies:
     - condition: redis-ha.enabled
       name: redis-ha
@@ -15,7 +15,7 @@ entries:
       version: 4.22.4
     description: A Helm chart for Argo CD, a declarative, GitOps continuous delivery
       tool for Kubernetes.
-    digest: 84cc7ebf4ba283117c19679c552398eb5a33f63da0f2e3227cd3949ff741ed10
+    digest: a9f603f67542a6b638390a66ae82d34683976f59f6f0057fb2299993bb23d9d9
     home: https://github.com/argoproj/argo-helm
     icon: https://argo-cd.readthedocs.io/en/stable/assets/logo.png
     keywords:
@@ -40,9 +40,9 @@ entries:
           description: Align changelog structure to show changelogs on Artifact Hub
     apiVersion: v2
     appVersion: v1.4.0
-    created: "2023-02-18T17:35:44.33084248Z"
+    created: "2023-02-18T18:25:40.652959477Z"
     description: A Helm chart for Argo Rollouts
-    digest: fd8e8a68ba7cdd5f82915f155c12adc60065687bdb8b3eec90c2804b46c1d1d3
+    digest: ff28d1d556a29e20f6f13152efc3ee30ed541d035fef513718da940d302ebeaf
     home: https://github.com/argoproj/argo-helm
     icon: https://argoproj.github.io/argo-rollouts/assets/logo.png
     keywords:
@@ -64,9 +64,9 @@ entries:
           description: Cleaned RBAC permissions for subresources (pods/log, pods/exec).
     apiVersion: v2
     appVersion: v3.4.5
-    created: "2023-02-18T17:35:44.333211594Z"
+    created: "2023-02-18T18:25:40.654951896Z"
     description: A Helm chart for Argo Workflows
-    digest: 396ef50a0b16959c8a6357f6e4846ab1a52aea13791468774430ce5a7b5a01ab
+    digest: d1bae0996fe7213f3ac1921381ae4a0cc74d4891e889c8c79e8925363435def0
     home: https://github.com/argoproj/argo-helm
     icon: https://raw.githubusercontent.com/argoproj/argo-workflows/master/docs/assets/argo.png
     maintainers:
@@ -79,4 +79,71 @@ entries:
     urls:
     - https://evopss.github.io/charts/argo-workflows-0.22.11.tgz
     version: 0.22.11
-generated: "2023-02-18T17:35:44.312651668Z"
+  etcd:
+  - annotations:
+      category: Database
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 3.5.7
+    created: "2023-02-18T18:25:40.657968526Z"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: etcd is a distributed key-value store designed to securely store
+      data across a cluster. etcd is widely used in production on account of its reliability,
+      fault-tolerance and ease of use.
+    digest: 82e62a4107e07a995da33628957820b9c5ea365e6dab050833d07f646a15d7ad
+    home: https://github.com/bitnami/charts/tree/main/bitnami/etcd
+    icon: https://bitnami.com/assets/stacks/etcd/img/etcd-stack-220x234.png
+    keywords:
+    - etcd
+    - cluster
+    - database
+    - cache
+    - key-value
+    maintainers:
+    - name: Bitnami
+      url: https://github.com/bitnami/charts
+    name: etcd
+    sources:
+    - https://github.com/bitnami/containers/tree/main/bitnami/etcd
+    - https://coreos.com/etcd/
+    urls:
+    - https://evopss.github.io/charts/etcd-8.7.5.tgz
+    version: 8.7.5
+  redis:
+  - annotations:
+      category: Database
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 7.0.8
+    created: "2023-02-18T18:25:40.665467001Z"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Redis(R) is an open source, advanced key-value store. It is often
+      referred to as a data structure server since keys can contain strings, hashes,
+      lists, sets and sorted sets.
+    digest: 7dc02c5d0e1b3a48b8d588dd2f9375a6bc3c03c7839dace34385357736ba8a8c
+    home: https://github.com/bitnami/charts/tree/main/bitnami/redis
+    icon: https://bitnami.com/assets/stacks/redis/img/redis-stack-220x234.png
+    keywords:
+    - redis
+    - keyvalue
+    - database
+    maintainers:
+    - name: Bitnami
+      url: https://github.com/bitnami/charts
+    name: redis
+    sources:
+    - https://github.com/bitnami/containers/tree/main/bitnami/redis
+    urls:
+    - https://evopss.github.io/charts/redis-17.7.5.tgz
+    version: 17.7.5
+generated: "2023-02-18T18:25:40.632170171Z"
