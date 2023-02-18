@@ -25,11 +25,12 @@ jobs:
       - name: Install Helm
         uses: azure/setup-helm@v3
       - name: Helm Package
+        working-directory: helm-source
         run: |
           files_changed="$(git show --pretty="" --name-only)"
           charts_dirs_changed="$(echo "$files_changed" | xargs dirname | grep -o "opensource/[^/]*/[^/]*" | sort | uniq || true)"
           for chart_name in $charts_dirs_changed; do
-            helm package helm-source/$opensource/ -u -d helm-repo/
+            helm package $opensource/ -u -d ../helm-repo/
           done
           ls helm-repo/
       - name: Upload helm chart
