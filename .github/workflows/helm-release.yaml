@@ -20,6 +20,7 @@ on:
             charts_dirs_changed="$(echo "$files_changed" | xargs dirname | grep -o "opensource/[^/]*/[^/]*" | sort | uniq || true)"
             if [[ "$num_charts_changed" -eq "1" ]]; then
               chart_name=$(echo "$charts_dirs_changed" | sed "s|opensource/||g")
+              echo $chart_name
               echo "chart=${chart_name}" >> $GITHUB_OUTPUT
             fi
     update-index:
