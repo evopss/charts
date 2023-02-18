@@ -7,7 +7,7 @@ entries:
           description: Global affinity configuration
     apiVersion: v2
     appVersion: v2.6.2
-    created: "2023-02-18T18:25:40.649705244Z"
+    created: "2023-02-18T18:25:58.113805866Z"
     dependencies:
     - condition: redis-ha.enabled
       name: redis-ha
@@ -15,7 +15,7 @@ entries:
       version: 4.22.4
     description: A Helm chart for Argo CD, a declarative, GitOps continuous delivery
       tool for Kubernetes.
-    digest: a9f603f67542a6b638390a66ae82d34683976f59f6f0057fb2299993bb23d9d9
+    digest: 0fbaa184fc66846ccf76441b500f5f1c62014694d773b67c774c2596bdb6363b
     home: https://github.com/argoproj/argo-helm
     icon: https://argo-cd.readthedocs.io/en/stable/assets/logo.png
     keywords:
@@ -40,9 +40,9 @@ entries:
           description: Align changelog structure to show changelogs on Artifact Hub
     apiVersion: v2
     appVersion: v1.4.0
-    created: "2023-02-18T18:25:40.652959477Z"
+    created: "2023-02-18T18:25:58.116837692Z"
     description: A Helm chart for Argo Rollouts
-    digest: ff28d1d556a29e20f6f13152efc3ee30ed541d035fef513718da940d302ebeaf
+    digest: 5020797196a553d865769b9476c3d1274b41c2a43b5435f55aaf545927c17c04
     home: https://github.com/argoproj/argo-helm
     icon: https://argoproj.github.io/argo-rollouts/assets/logo.png
     keywords:
@@ -64,9 +64,9 @@ entries:
           description: Cleaned RBAC permissions for subresources (pods/log, pods/exec).
     apiVersion: v2
     appVersion: v3.4.5
-    created: "2023-02-18T18:25:40.654951896Z"
+    created: "2023-02-18T18:25:58.118748908Z"
     description: A Helm chart for Argo Workflows
-    digest: d1bae0996fe7213f3ac1921381ae4a0cc74d4891e889c8c79e8925363435def0
+    digest: fccad68612baf44c60038a099b4923633c718fcea7c3ba4cc777e20581e1edc9
     home: https://github.com/argoproj/argo-helm
     icon: https://raw.githubusercontent.com/argoproj/argo-workflows/master/docs/assets/argo.png
     maintainers:
@@ -85,7 +85,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 3.5.7
-    created: "2023-02-18T18:25:40.657968526Z"
+    created: "2023-02-18T18:25:58.122998445Z"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -95,7 +95,7 @@ entries:
     description: etcd is a distributed key-value store designed to securely store
       data across a cluster. etcd is widely used in production on account of its reliability,
       fault-tolerance and ease of use.
-    digest: 82e62a4107e07a995da33628957820b9c5ea365e6dab050833d07f646a15d7ad
+    digest: f5f795b280eb8d9782ca45bc4c07735ae6a84a3ceb8706e1a2a05878cf7dbad3
     home: https://github.com/bitnami/charts/tree/main/bitnami/etcd
     icon: https://bitnami.com/assets/stacks/etcd/img/etcd-stack-220x234.png
     keywords:
@@ -120,7 +120,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 7.0.8
-    created: "2023-02-18T18:25:40.665467001Z"
+    created: "2023-02-18T18:25:58.128440791Z"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -130,7 +130,7 @@ entries:
     description: Redis(R) is an open source, advanced key-value store. It is often
       referred to as a data structure server since keys can contain strings, hashes,
       lists, sets and sorted sets.
-    digest: 7dc02c5d0e1b3a48b8d588dd2f9375a6bc3c03c7839dace34385357736ba8a8c
+    digest: 100528f3555c522aedcb6e4d5308c9758387bdaf04e1b4819993d334f3a20574
     home: https://github.com/bitnami/charts/tree/main/bitnami/redis
     icon: https://bitnami.com/assets/stacks/redis/img/redis-stack-220x234.png
     keywords:
@@ -146,4 +146,4 @@ entries:
     urls:
     - https://evopss.github.io/charts/redis-17.7.5.tgz
     version: 17.7.5
-generated: "2023-02-18T18:25:40.632170171Z"
+generated: "2023-02-18T18:25:58.101787964Z"
