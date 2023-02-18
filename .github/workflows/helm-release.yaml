@@ -32,7 +32,6 @@ jobs:
               helm package $chart_name -u -d ../helm-repo/
             done
           done
-          ls helm-repo/
       - name: Upload helm chart
         working-directory: helm-repo
         run: |

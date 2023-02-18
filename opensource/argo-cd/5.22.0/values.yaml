@@ -3015,5 +3015,3 @@ notifications:
 
       # -- [Node selector]
       nodeSelector: {}
-
-
