@@ -11,11 +11,13 @@ jobs:
     runs-on: ubuntu-latest
     name: Update charts index
     steps:
-      - uses: actions/checkout@v3
+      - name: checkout helm resource
+        uses: actions/checkout@v3
         with:
           path: helm-source
           fetch-depth: 1
-      - uses: actions/checkout@v3
+      - name: checkout helm repo
+        uses: actions/checkout@v3
         with:
           path: helm-repo
           ref: gh-pages
