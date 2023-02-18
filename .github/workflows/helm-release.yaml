@@ -3,7 +3,7 @@ on:
   push:
     - main
   paths:
-    - 'opensource/argocd/**'
+    - 'opensource/**/**'
     - '!**md'
   jobs:
     get-chart:
