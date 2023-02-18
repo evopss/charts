@@ -27,13 +27,11 @@ jobs:
       - name: Helm Package
         working-directory: helm-source
         run: |
-#          files_changed="$(git show --pretty="" --name-only)"
-#          charts_dirs_changed="$(echo "$files_changed" | xargs dirname | grep -o "opensource/[^/]*/[^/]*" | sort | uniq || true)"
-           for charts in opensource/*/ ; do
-             for chart_name in "$charts"*; do
-               helm package $chart_name -u -d ../helm-repo/
-             done
-           done
+          for charts in opensource/*/ ; do
+            for chart_name in "$charts"*; do
+              helm package $chart_name -u -d ../helm-repo/
+            done
+          done
           ls helm-repo/
       - name: Upload helm chart
         working-directory: helm-repo
