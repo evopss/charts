@@ -1,0 +1,20 @@
+name: Helm Release
+on:
+  push:
+    - main
+  paths:
+    - 'opensource/prometheus/**'
+    - '!**md'
+  jobs:
+    get-chart:
+      runs-on: ubuntu-latest
+      name: 'Get modified charts'
+      outputs:
+        chart: ${{ steps.get-chart.outputs.chart }}
+        result: ${{ steps.get-chart.outputs.result }}
+      steps:
+        - uses: actions/checkout@v3
+        - id: get-chart
+          name: 'Get modified charts'
+          run: |
+            files_changed="$(git show --pretty="" --name-only)"
