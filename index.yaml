@@ -7,7 +7,7 @@ entries:
           description: Global affinity configuration
     apiVersion: v2
     appVersion: v2.6.2
-    created: "2023-02-19T12:41:38.410276289Z"
+    created: "2023-02-19T16:16:29.388235034Z"
     dependencies:
     - condition: redis-ha.enabled
       name: redis-ha
@@ -15,7 +15,7 @@ entries:
       version: 4.22.4
     description: A Helm chart for Argo CD, a declarative, GitOps continuous delivery
       tool for Kubernetes.
-    digest: fe375388b74542e96ac9c234fe154a9288cafbde025cb355c11551e43085a942
+    digest: f10e84ea29111a38d96d21e7cf44e66f1e14d44e37bdf666ce8b30d391977207
     home: https://github.com/argoproj/argo-helm
     icon: https://argo-cd.readthedocs.io/en/stable/assets/logo.png
     keywords:
@@ -40,9 +40,9 @@ entries:
           description: Align changelog structure to show changelogs on Artifact Hub
     apiVersion: v2
     appVersion: v1.4.0
-    created: "2023-02-19T12:41:38.414194212Z"
+    created: "2023-02-19T16:16:29.392994197Z"
     description: A Helm chart for Argo Rollouts
-    digest: b4b7644477e581361aba2a650d4021fd1e1b13c0b883fd90b323cd79df81ec6b
+    digest: 1d0f0c02c8c71d1af03edde2dfd76576a0a3590c67b982ffe566f43251c0fac9
     home: https://github.com/argoproj/argo-helm
     icon: https://argoproj.github.io/argo-rollouts/assets/logo.png
     keywords:
@@ -64,9 +64,9 @@ entries:
           description: Cleaned RBAC permissions for subresources (pods/log, pods/exec).
     apiVersion: v2
     appVersion: v3.4.5
-    created: "2023-02-19T12:41:38.416594526Z"
+    created: "2023-02-19T16:16:29.395873936Z"
     description: A Helm chart for Argo Workflows
-    digest: 410d0a6c639ef0658059e7f7bd02bec5762a4faf9ce781c6290263a69b36a1bd
+    digest: 1baaa4f9a84b5402181466aea9024cdfd2304c827c4f47ff8bfc9a0b9dd37457
     home: https://github.com/argoproj/argo-helm
     icon: https://raw.githubusercontent.com/argoproj/argo-workflows/master/docs/assets/argo.png
     maintainers:
@@ -85,7 +85,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 3.5.7
-    created: "2023-02-19T12:41:38.421839657Z"
+    created: "2023-02-19T16:16:29.398832675Z"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -95,7 +95,7 @@ entries:
     description: etcd is a distributed key-value store designed to securely store
       data across a cluster. etcd is widely used in production on account of its reliability,
       fault-tolerance and ease of use.
-    digest: 82a5ee4fbf3642baf146f0ea1e9830b514bd1a11efbd7aab721b80ca0af44eb2
+    digest: ffecb889086405e7a381e076e862d26d78b3cee0a42c8f8984a788054ae48cc7
     home: https://github.com/bitnami/charts/tree/main/bitnami/etcd
     icon: https://bitnami.com/assets/stacks/etcd/img/etcd-stack-220x234.png
     keywords:
@@ -114,10 +114,66 @@ entries:
     urls:
     - https://evopss.github.io/charts/etcd-8.7.5.tgz
     version: 8.7.5
+  prometheus:
+  - annotations:
+      artifacthub.io/license: Apache-2.0
+      artifacthub.io/links: |
+        - name: Chart Source
+          url: https://github.com/prometheus-community/helm-charts
+        - name: Upstream Project
+          url: https://github.com/prometheus/prometheus
+    apiVersion: v2
+    appVersion: v2.41.0
+    created: "2023-02-19T16:16:29.40679038Z"
+    dependencies:
+    - condition: alertmanager.enabled
+      name: alertmanager
+      repository: https://prometheus-community.github.io/helm-charts
+      version: 0.24.*
+    - condition: kube-state-metrics.enabled
+      name: kube-state-metrics
+      repository: https://prometheus-community.github.io/helm-charts
+      version: 4.30.*
+    - condition: prometheus-node-exporter.enabled
+      name: prometheus-node-exporter
+      repository: https://prometheus-community.github.io/helm-charts
+      version: 4.8.*
+    - condition: prometheus-pushgateway.enabled
+      name: prometheus-pushgateway
+      repository: https://prometheus-community.github.io/helm-charts
+      version: 2.0.*
+    description: Prometheus is a monitoring system and time series database.
+    digest: e98903b95b19bcdc659c60a52ec0cf08cec70495c0d14afa5af149d04a3e7af2
+    home: https://prometheus.io/
+    icon: https://raw.githubusercontent.com/prometheus/prometheus.github.io/master/assets/prometheus_logo-cb55bb5c346.png
+    keywords:
+    - monitoring
+    - prometheus
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: gianrubio@gmail.com
+      name: gianrubio
+    - email: zanhsieh@gmail.com
+      name: zanhsieh
+    - email: miroslav.hadzhiev@gmail.com
+      name: Xtigyro
+    - email: naseem@transit.app
+      name: naseemkullah
+    name: prometheus
+    sources:
+    - https://github.com/prometheus/alertmanager
+    - https://github.com/prometheus/prometheus
+    - https://github.com/prometheus/pushgateway
+    - https://github.com/prometheus/node_exporter
+    - https://github.com/kubernetes/kube-state-metrics
+    type: application
+    urls:
+    - https://evopss.github.io/charts/prometheus-19.6.1.tgz
+    version: 19.6.1
   prometheus-operator:
   - apiVersion: v1
     appVersion: 0.38.1
-    created: "2023-02-19T12:41:38.444305591Z"
+    created: "2023-02-19T16:16:29.426045635Z"
     dependencies:
     - condition: kubeStateMetrics.enabled
       name: kube-state-metrics
@@ -133,7 +189,7 @@ entries:
       version: 5.3.*
     deprecated: true
     description: DEPRECATED - This chart will be renamed. See https://github.com/prometheus-community/community/issues/28#issuecomment-670406329
-    digest: 0e79ff3cece37be01f94bc448ee285c430b96ca02ed00557718dea7e9cb5ecc9
+    digest: 179436f7ce56d381dd59a77a6b4d45a348de45874d0681d0bbd6e6105400c52d
     home: https://github.com/coreos/prometheus-operator
     icon: https://raw.githubusercontent.com/prometheus/prometheus.github.io/master/assets/prometheus_logo-cb55bb5c346.png
     keywords:
@@ -153,7 +209,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 7.0.8
-    created: "2023-02-19T12:41:38.45099623Z"
+    created: "2023-02-19T16:16:29.431421406Z"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -163,7 +219,7 @@ entries:
     description: Redis(R) is an open source, advanced key-value store. It is often
       referred to as a data structure server since keys can contain strings, hashes,
       lists, sets and sorted sets.
-    digest: c6d9d961a30634488055f582894114834b552756bda22516e480cb1900438398
+    digest: 00fa2357f0b170b6589b7127c57973b8fd3c8748dd51e280da82dfe1f700e02a
     home: https://github.com/bitnami/charts/tree/main/bitnami/redis
     icon: https://bitnami.com/assets/stacks/redis/img/redis-stack-220x234.png
     keywords:
@@ -179,4 +235,35 @@ entries:
     urls:
     - https://evopss.github.io/charts/redis-17.7.5.tgz
     version: 17.7.5
-generated: "2023-02-19T12:41:38.393459489Z"
+  victoria-metrics-k8s-stack:
+  - apiVersion: v2
+    appVersion: 1.87.1
+    created: "2023-02-19T16:16:29.459279575Z"
+    dependencies:
+    - condition: victoria-metrics-operator.enabled
+      name: victoria-metrics-operator
+      repository: https://victoriametrics.github.io/helm-charts
+      version: 0.18.*
+    - condition: kube-state-metrics.enabled
+      name: kube-state-metrics
+      repository: https://prometheus-community.github.io/helm-charts
+      version: 4.24.*
+    - condition: prometheus-node-exporter.enabled
+      name: prometheus-node-exporter
+      repository: https://prometheus-community.github.io/helm-charts
+      version: 4.7.*
+    - condition: grafana.enabled
+      name: grafana
+      repository: https://grafana.github.io/helm-charts
+      version: 6.44.*
+    description: Kubernetes monitoring on VictoriaMetrics stack. Includes VictoriaMetrics
+      Operator, Grafana dashboards, ServiceScrapes and VMRules
+    digest: 1a4e970ca5890f3f380df1a1932831f5e14b1c9836369b03150eb2a6b8e24026
+    name: victoria-metrics-k8s-stack
+    sources:
+    - https://github.com/VictoriaMetrics/helm-charts
+    type: application
+    urls:
+    - https://evopss.github.io/charts/victoria-metrics-k8s-stack-0.14.8.tgz
+    version: 0.14.8
+generated: "2023-02-19T16:16:29.375194562Z"
