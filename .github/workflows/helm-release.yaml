@@ -29,7 +29,7 @@ jobs:
         run: |
           for charts in opensource/*/ ; do
             for chart_name in "$charts"*; do
-              helm package $chart_name -d ../helm-repo/
+              helm package $chart_name -u -d ../helm-repo/
             done
           done
       - name: Upload helm chart
