@@ -6,7 +6,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 2.5.1
-    created: "2023-02-20T15:11:20.010412738Z"
+    created: "2023-02-20T16:13:20.497997238Z"
     dependencies:
     - condition: redis.enabled
       name: redis
@@ -24,7 +24,7 @@ entries:
     description: Apache Airflow is a tool to express and execute workflows as directed
       acyclic graphs (DAGs). It includes utilities to schedule tasks, monitor task
       progress and handle task dependencies.
-    digest: 2fc3179b34f02c1b1cc3258d4e39c50206e8f6c0d532fb7c34cdea57998cfaf1
+    digest: 8546e510be757509bf5331ea3a7d6524c939f6af4b1bffa081ffd66c98ff0859
     home: https://github.com/bitnami/charts/tree/main/bitnami/airflow
     icon: https://bitnami.com/assets/stacks/airflow/img/airflow-stack-220x234.png
     keywords:
@@ -49,7 +49,7 @@ entries:
           description: Global affinity configuration
     apiVersion: v2
     appVersion: v2.6.2
-    created: "2023-02-20T15:11:20.022871301Z"
+    created: "2023-02-20T16:13:20.513824319Z"
     dependencies:
     - condition: redis-ha.enabled
       name: redis-ha
@@ -57,7 +57,7 @@ entries:
       version: 4.22.4
     description: A Helm chart for Argo CD, a declarative, GitOps continuous delivery
       tool for Kubernetes.
-    digest: a514bd2b36395b53e41ff29bf45659a70daee1e1847b66aacacd179cbca7f90c
+    digest: e91ac6da0f76bf5443bea18b479e49ae267bcc033297186d541057fb9a69f974
     home: https://github.com/argoproj/argo-helm
     icon: https://argo-cd.readthedocs.io/en/stable/assets/logo.png
     keywords:
@@ -82,9 +82,9 @@ entries:
           description: Align changelog structure to show changelogs on Artifact Hub
     apiVersion: v2
     appVersion: v1.4.0
-    created: "2023-02-20T15:11:20.025722969Z"
+    created: "2023-02-20T16:13:20.517651339Z"
     description: A Helm chart for Argo Rollouts
-    digest: 0edc1525cf1d0043abc098617df86617fc000ca74e4e1430bc37533c4821f4cd
+    digest: 3ad4536bafd2eb173c79ec306ebdeca0d57bb2575bd1b0e50ec8845db48731c2
     home: https://github.com/argoproj/argo-helm
     icon: https://argoproj.github.io/argo-rollouts/assets/logo.png
     keywords:
@@ -106,9 +106,9 @@ entries:
           description: Cleaned RBAC permissions for subresources (pods/log, pods/exec).
     apiVersion: v2
     appVersion: v3.4.5
-    created: "2023-02-20T15:11:20.027783247Z"
+    created: "2023-02-20T16:13:20.520728754Z"
     description: A Helm chart for Argo Workflows
-    digest: 84b094219c92b403497aa3a9683dbed8bb3d4d4b14d5f5006d319d10980ea44f
+    digest: 4ec40d0ed3e1349eecdeb9604baa2775289e32a73d880a7a6c85caac8aaa77ff
     home: https://github.com/argoproj/argo-helm
     icon: https://raw.githubusercontent.com/argoproj/argo-workflows/master/docs/assets/argo.png
     maintainers:
@@ -127,7 +127,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 8.6.2
-    created: "2023-02-20T15:11:20.037876335Z"
+    created: "2023-02-20T16:13:20.53357382Z"
     dependencies:
     - condition: global.kibanaEnabled
       name: kibana
@@ -141,7 +141,7 @@ entries:
     description: Elasticsearch is a distributed search and analytics engine. It is
       used for web search, log monitoring, and real-time analytics. Ideal for Big
       Data applications.
-    digest: 26ac822d02e5028b8a9cdfc12ac39ae93a38d33ad24dc5b336671354f4924907
+    digest: 67575bca39fc7a65f21d40686dddab9cade3d98a8f05274ae57ba348046672f6
     home: https://github.com/bitnami/charts/tree/main/bitnami/elasticsearch
     icon: https://bitnami.com/assets/stacks/elasticsearch/img/elasticsearch-stack-220x234.png
     keywords:
@@ -162,7 +162,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 3.5.7
-    created: "2023-02-20T15:11:20.041128599Z"
+    created: "2023-02-20T16:13:20.537840042Z"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -172,7 +172,7 @@ entries:
     description: etcd is a distributed key-value store designed to securely store
       data across a cluster. etcd is widely used in production on account of its reliability,
       fault-tolerance and ease of use.
-    digest: 30999e4757ced65b3818c3eab9b14a6c97928bf6e05950c50ea6de227dcc3ad4
+    digest: 47a3fee2c8beef534d311ba3ccf5e8999f8895a3bd13f069b6bbef34f095b232
     home: https://github.com/bitnami/charts/tree/main/bitnami/etcd
     icon: https://bitnami.com/assets/stacks/etcd/img/etcd-stack-220x234.png
     keywords:
@@ -197,7 +197,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 2.375.3
-    created: "2023-02-20T15:11:20.043697771Z"
+    created: "2023-02-20T16:13:20.54132196Z"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -207,7 +207,7 @@ entries:
     description: Jenkins is an open source Continuous Integration and Continuous Delivery
       (CI/CD) server designed to automate the building, testing, and deploying of
       any software project.
-    digest: 59de9e8d9a83eb98529d49074b7950dfd1db7c35ded28629a71ef27e0a30964b
+    digest: 88b73feb6f45649abdf5d22fdf97d299ca486066eebf4ac1a97535580accd18d
     home: https://github.com/bitnami/charts/tree/main/bitnami/jenkins
     icon: https://bitnami.com/assets/stacks/jenkins/img/jenkins-stack-220x234.png
     keywords:
@@ -233,7 +233,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 3.4.0
-    created: "2023-02-20T15:11:20.053587862Z"
+    created: "2023-02-20T16:13:20.553850024Z"
     dependencies:
     - condition: zookeeper.enabled
       name: zookeeper
@@ -247,7 +247,7 @@ entries:
     description: Apache Kafka is a distributed streaming platform designed to build
       real-time pipelines and can be used as a message broker or as a replacement
       for a log aggregation solution for big data applications.
-    digest: 3bbed48797672fd87851eec3c524080adef32f6fa8b1ddfa365a33e913608ef5
+    digest: b012b7001f5705cc380d217793088343b6d642152195a703294187bcc9be3d2e
     home: https://github.com/bitnami/charts/tree/main/bitnami/kafka
     icon: https://bitnami.com/assets/stacks/kafka/img/kafka-stack-220x234.png
     keywords:
@@ -272,7 +272,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 2023.2.17
-    created: "2023-02-20T15:11:20.057110823Z"
+    created: "2023-02-20T16:13:20.558502548Z"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -282,7 +282,7 @@ entries:
     description: MinIO(R) is an object storage server, compatible with Amazon S3 cloud
       storage service, mainly used for storing unstructured data (such as photos,
       videos, log files, etc.).
-    digest: 2be2a5a23158f61a2812314287d6cafbf261caaeb08a8cd4f233263fa8b906c5
+    digest: 0daded29f0cc2192d572f7f0ec3ddb3bc30990b1f322aebdd85115caa577773c
     home: https://github.com/bitnami/charts/tree/main/bitnami/minio
     icon: https://bitnami.com/assets/stacks/minio/img/minio-stack-220x234.png
     keywords:
@@ -307,7 +307,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 6.0.4
-    created: "2023-02-20T15:11:20.063987847Z"
+    created: "2023-02-20T16:13:20.566291088Z"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -317,7 +317,7 @@ entries:
     description: MongoDB(R) is a relational open source NoSQL database. Easy to use,
       it stores data in JSON-like documents. Automated scalability and high-performance.
       Ideal for developing cloud native applications.
-    digest: fd5689a3bf933140aa12c0244771f0e696dca2cbc7bc0974c79f595bdedf7c52
+    digest: acb84623b7334955c3749462082c41d9aca6e11c4407620ef5716a068c841988
     home: https://github.com/bitnami/charts/tree/main/bitnami/mongodb
     icon: https://bitnami.com/assets/stacks/mongodb/img/mongodb-stack-220x234.png
     keywords:
@@ -343,7 +343,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 8.0.32
-    created: "2023-02-20T15:11:20.067750805Z"
+    created: "2023-02-20T16:13:20.573317724Z"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -353,7 +353,7 @@ entries:
     description: MySQL is a fast, reliable, scalable, and easy to use open source
       relational database system. Designed to handle mission-critical, heavy-load
       production applications.
-    digest: c14398df9f0be049d154ed1bb4fc4f63ce2b17c2e106ee9607d9db4a560af8bb
+    digest: 73573068fd2bf49a02440a7874f729522d8b1ee3831a5d54f27e6cec4bc86269
     home: https://github.com/bitnami/charts/tree/main/bitnami/mysql
     icon: https://bitnami.com/assets/stacks/mysql/img/mysql-stack-220x234.png
     keywords:
@@ -375,11 +375,11 @@ entries:
   nfs-client-provisioner:
   - apiVersion: v1
     appVersion: 3.1.0
-    created: "2023-02-20T15:11:20.0682609Z"
+    created: "2023-02-20T16:13:20.574021628Z"
     deprecated: true
     description: DEPRECATED - nfs-client is an automatic provisioner that used your
       *already configured* NFS server, automatically creating Persistent Volumes.
-    digest: 8adb241ba71a5d2794869cb85f5adb5b8f42a88d8d3fbcadc1673f2b39016195
+    digest: 3fa2f43c837a769abb2625614adae9a80054a22ce909929981567d967cf59baf
     home: https://github.com/kubernetes-incubator/external-storage/tree/master/nfs-client
     keywords:
     - nfs
@@ -390,13 +390,33 @@ entries:
     urls:
     - https://evopss.github.io/charts/nfs-client-provisioner-1.2.11.tgz
     version: 1.2.11
+  nfs-subdir-external-provisioner:
+  - apiVersion: v1
+    appVersion: 4.0.2
+    created: "2023-02-20T16:13:20.575023033Z"
+    description: nfs-subdir-external-provisioner is an automatic provisioner that
+      used your *already configured* NFS server, automatically creating Persistent
+      Volumes.
+    digest: 1b7cbf4945d31807be382518c7d10ca3f311624da0ef5e1ca81fb24d31fa12dd
+    home: https://github.com/kubernetes-sigs/nfs-subdir-external-provisioner
+    keywords:
+    - nfs
+    - storage
+    - provisioner
+    kubeVersion: '>=1.9.0-0'
+    name: nfs-subdir-external-provisioner
+    sources:
+    - https://github.com/kubernetes-sigs/nfs-subdir-external-provisioner
+    urls:
+    - https://evopss.github.io/charts/nfs-subdir-external-provisioner-4.0.17.tgz
+    version: 4.0.17
   postgresql:
   - annotations:
       category: Database
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 15.2.0
-    created: "2023-02-20T15:11:20.072874449Z"
+    created: "2023-02-20T16:13:20.581193564Z"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -406,7 +426,7 @@ entries:
     description: PostgreSQL (Postgres) is an open source object-relational database
       known for reliability and data integrity. ACID-compliant, it supports foreign
       keys, joins, views, triggers and stored procedures.
-    digest: 9313e6ffce58b1328d7d15f40c42c59497ec095a361c687b7d86f65a3c1a0956
+    digest: 59fa301acd381867f6cb61d3c0edc50e3cdee0adfbe6de11c6c569253117af64
     home: https://github.com/bitnami/charts/tree/main/bitnami/postgresql
     icon: https://bitnami.com/assets/stacks/postgresql/img/postgresql-stack-220x234.png
     keywords:
@@ -436,7 +456,7 @@ entries:
           url: https://github.com/prometheus/prometheus
     apiVersion: v2
     appVersion: v2.41.0
-    created: "2023-02-20T15:11:20.080462865Z"
+    created: "2023-02-20T16:13:20.592444622Z"
     dependencies:
     - condition: alertmanager.enabled
       name: alertmanager
@@ -455,7 +475,7 @@ entries:
       repository: https://prometheus-community.github.io/helm-charts
       version: 2.0.*
     description: Prometheus is a monitoring system and time series database.
-    digest: 30fed51267232e9c485566900865597f476d43fe73328cb5fa4270e7255d1557
+    digest: 8daf8dc3737abdf015ef8851b3e2336e6d90939bf0cc35e606eca4f03b9c8504
     home: https://prometheus.io/
     icon: https://raw.githubusercontent.com/prometheus/prometheus.github.io/master/assets/prometheus_logo-cb55bb5c346.png
     keywords:
@@ -485,7 +505,7 @@ entries:
   prometheus-operator:
   - apiVersion: v1
     appVersion: 0.38.1
-    created: "2023-02-20T15:11:20.099583354Z"
+    created: "2023-02-20T16:13:20.618848557Z"
     dependencies:
     - condition: kubeStateMetrics.enabled
       name: kube-state-metrics
@@ -501,7 +521,7 @@ entries:
       version: 5.3.*
     deprecated: true
     description: DEPRECATED - This chart will be renamed. See https://github.com/prometheus-community/community/issues/28#issuecomment-670406329
-    digest: a84f41a99e7fbf99c469829cb9f39901ddbb54f1b2dc043fcf2a6aacf23eca09
+    digest: b24115113d747b8ac285de3508bbc921db3c12d1b7dba4b7fa0d2c603823bba2
     home: https://github.com/coreos/prometheus-operator
     icon: https://raw.githubusercontent.com/prometheus/prometheus.github.io/master/assets/prometheus_logo-cb55bb5c346.png
     keywords:
@@ -521,7 +541,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 3.11.9
-    created: "2023-02-20T15:11:20.104070104Z"
+    created: "2023-02-20T16:13:20.625754193Z"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -531,7 +551,7 @@ entries:
     description: RabbitMQ is an open source general-purpose message broker that is
       designed for consistent, highly-available messaging scenarios (both synchronous
       and asynchronous).
-    digest: be39cc1514d6917ffd1685dad7b9a64b6fec99a9b6c21236bbb4730ac10c6100
+    digest: beef6cab51c9a33dcaa63c13b94fa464b361b5b3660b6384163936f996e104a4
     home: https://github.com/bitnami/charts/tree/main/bitnami/rabbitmq
     icon: https://bitnami.com/assets/stacks/rabbitmq/img/rabbitmq-stack-220x234.png
     keywords:
@@ -554,7 +574,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 7.0.8
-    created: "2023-02-20T15:11:20.10994774Z"
+    created: "2023-02-20T16:13:20.63299343Z"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -564,7 +584,7 @@ entries:
     description: Redis(R) is an open source, advanced key-value store. It is often
       referred to as a data structure server since keys can contain strings, hashes,
       lists, sets and sorted sets.
-    digest: 625b613f38775af37a70e1e7a2d85e5bda122e9f8bf4f9f19fd8729975e30be4
+    digest: 26cf1310d2588040a7c61706d73c91f822226bc2f8235603240905c6edd8d29a
     home: https://github.com/bitnami/charts/tree/main/bitnami/redis
     icon: https://bitnami.com/assets/stacks/redis/img/redis-stack-220x234.png
     keywords:
@@ -583,7 +603,7 @@ entries:
   victoria-metrics-k8s-stack:
   - apiVersion: v2
     appVersion: 1.87.1
-    created: "2023-02-20T15:11:20.137452136Z"
+    created: "2023-02-20T16:13:20.675317647Z"
     dependencies:
     - condition: victoria-metrics-operator.enabled
       name: victoria-metrics-operator
@@ -603,7 +623,7 @@ entries:
       version: 6.44.*
     description: Kubernetes monitoring on VictoriaMetrics stack. Includes VictoriaMetrics
       Operator, Grafana dashboards, ServiceScrapes and VMRules
-    digest: 00e0ad82d2c3e8ffefaaa5a635bd3a7250c16c09ce8f363c663c3b75636361c5
+    digest: 3aa64fbd615fb345882b3a2ae43a76d8de5c3ad9520d4442211264205d80c63f
     name: victoria-metrics-k8s-stack
     sources:
     - https://github.com/VictoriaMetrics/helm-charts
@@ -617,7 +637,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 3.8.1
-    created: "2023-02-20T15:11:20.140768299Z"
+    created: "2023-02-20T16:13:20.679484068Z"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -626,7 +646,7 @@ entries:
       version: 2.x.x
     description: Apache ZooKeeper provides a reliable, centralized register of configuration
       data and services for distributed applications.
-    digest: b85c9b97adc0e3249a245edf2bb21511784d3155f98d4fa2809cd7329a810a81
+    digest: bb5e150bafa2fb7f63fc464adba4df9e323b55f2e98b40a9fa9c7a3dbd6a1bcf
     home: https://github.com/bitnami/charts/tree/main/bitnami/zookeeper
     icon: https://bitnami.com/assets/stacks/zookeeper/img/zookeeper-stack-220x234.png
     keywords:
@@ -641,4 +661,4 @@ entries:
     urls:
     - https://evopss.github.io/charts/zookeeper-11.1.3.tgz
     version: 11.1.3
-generated: "2023-02-20T15:11:19.989377771Z"
+generated: "2023-02-20T16:13:20.476522728Z"
