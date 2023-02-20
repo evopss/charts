@@ -7,7 +7,7 @@ entries:
           description: Global affinity configuration
     apiVersion: v2
     appVersion: v2.6.2
-    created: "2023-02-19T17:09:52.467396856Z"
+    created: "2023-02-20T14:05:17.088008699Z"
     dependencies:
     - condition: redis-ha.enabled
       name: redis-ha
@@ -15,7 +15,7 @@ entries:
       version: 4.22.4
     description: A Helm chart for Argo CD, a declarative, GitOps continuous delivery
       tool for Kubernetes.
-    digest: 19eecf16373346d4b6c22000c9ec4abca75bec9c6e3e57011755d688aa82486b
+    digest: cd8393e169f1ba93c0313d92406bdcee703cd287c93c0e5f62f5a2489907c9d7
     home: https://github.com/argoproj/argo-helm
     icon: https://argo-cd.readthedocs.io/en/stable/assets/logo.png
     keywords:
@@ -40,9 +40,9 @@ entries:
           description: Align changelog structure to show changelogs on Artifact Hub
     apiVersion: v2
     appVersion: v1.4.0
-    created: "2023-02-19T17:09:52.470711966Z"
+    created: "2023-02-20T14:05:17.092084913Z"
     description: A Helm chart for Argo Rollouts
-    digest: 088d07646678d190f56f61029b8905cff1fb5d38822c726b662e99faf2884845
+    digest: 10c805e41a98b71a06cf68da116b3e6cf0d5bee2e5268228e3e196bd8a9cd7c6
     home: https://github.com/argoproj/argo-helm
     icon: https://argoproj.github.io/argo-rollouts/assets/logo.png
     keywords:
@@ -64,9 +64,9 @@ entries:
           description: Cleaned RBAC permissions for subresources (pods/log, pods/exec).
     apiVersion: v2
     appVersion: v3.4.5
-    created: "2023-02-19T17:09:52.473541559Z"
+    created: "2023-02-20T14:05:17.094597321Z"
     description: A Helm chart for Argo Workflows
-    digest: c510c1ee50ea168a3e40f91dd3a4a16f981b5f98f44ca3c2b38db6adc85fba1b
+    digest: f5902dcb815f33a3c12e068febc5860c5b151dbdee0f6ba8a25d65b7b6127dba
     home: https://github.com/argoproj/argo-helm
     icon: https://raw.githubusercontent.com/argoproj/argo-workflows/master/docs/assets/argo.png
     maintainers:
@@ -85,7 +85,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 3.5.7
-    created: "2023-02-19T17:09:52.476961072Z"
+    created: "2023-02-20T14:05:17.10011194Z"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -95,7 +95,7 @@ entries:
     description: etcd is a distributed key-value store designed to securely store
       data across a cluster. etcd is widely used in production on account of its reliability,
       fault-tolerance and ease of use.
-    digest: c6b989d8f8b69d1fd457631c7ff28e8ba4870d38c9a0f6c15c24977620f5b00b
+    digest: df2105ddb473cfb90af37fb0c1455987062681fd697bd554ece3432b1a10d6a3
     home: https://github.com/bitnami/charts/tree/main/bitnami/etcd
     icon: https://bitnami.com/assets/stacks/etcd/img/etcd-stack-220x234.png
     keywords:
@@ -114,6 +114,24 @@ entries:
     urls:
     - https://evopss.github.io/charts/etcd-8.7.5.tgz
     version: 8.7.5
+  nfs-client-provisioner:
+  - apiVersion: v1
+    appVersion: 3.1.0
+    created: "2023-02-20T14:05:17.100762442Z"
+    deprecated: true
+    description: DEPRECATED - nfs-client is an automatic provisioner that used your
+      *already configured* NFS server, automatically creating Persistent Volumes.
+    digest: a56627f8e799f84ea2816bec4f8bb7d0fbbb72375d8c572ba214263e6927e11d
+    home: https://github.com/kubernetes-incubator/external-storage/tree/master/nfs-client
+    keywords:
+    - nfs
+    - storage
+    name: nfs-client-provisioner
+    sources:
+    - https://github.com/kubernetes-incubator/external-storage/tree/master/nfs-client
+    urls:
+    - https://evopss.github.io/charts/nfs-client-provisioner-1.2.11.tgz
+    version: 1.2.11
   prometheus:
   - annotations:
       artifacthub.io/license: Apache-2.0
@@ -124,7 +142,7 @@ entries:
           url: https://github.com/prometheus/prometheus
     apiVersion: v2
     appVersion: v2.41.0
-    created: "2023-02-19T17:09:52.483860301Z"
+    created: "2023-02-20T14:05:17.109685873Z"
     dependencies:
     - condition: alertmanager.enabled
       name: alertmanager
@@ -143,7 +161,7 @@ entries:
       repository: https://prometheus-community.github.io/helm-charts
       version: 2.0.*
     description: Prometheus is a monitoring system and time series database.
-    digest: 558f23f1b995fde9b474a85b37fb7ecad62997257fcdda4aba9c5d4b5e77f0de
+    digest: 2509ffcee0418d710282e3c7046028693e5e00e430ae7915d11080f6d1c53bb9
     home: https://prometheus.io/
     icon: https://raw.githubusercontent.com/prometheus/prometheus.github.io/master/assets/prometheus_logo-cb55bb5c346.png
     keywords:
@@ -173,7 +191,7 @@ entries:
   prometheus-operator:
   - apiVersion: v1
     appVersion: 0.38.1
-    created: "2023-02-19T17:09:52.503372447Z"
+    created: "2023-02-20T14:05:17.132741551Z"
     dependencies:
     - condition: kubeStateMetrics.enabled
       name: kube-state-metrics
@@ -189,7 +207,7 @@ entries:
       version: 5.3.*
     deprecated: true
     description: DEPRECATED - This chart will be renamed. See https://github.com/prometheus-community/community/issues/28#issuecomment-670406329
-    digest: cc59e5a75d1a288b03c75422479cd89a83986489959e2b2430e0e8a4fc9908c3
+    digest: 76a828d84a4a267b196c1b04418fc74f4d65883adff07b425ba805bab4b2cdd6
     home: https://github.com/coreos/prometheus-operator
     icon: https://raw.githubusercontent.com/prometheus/prometheus.github.io/master/assets/prometheus_logo-cb55bb5c346.png
     keywords:
@@ -209,7 +227,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 7.0.8
-    created: "2023-02-19T17:09:52.509002333Z"
+    created: "2023-02-20T14:05:17.139671675Z"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -219,7 +237,7 @@ entries:
     description: Redis(R) is an open source, advanced key-value store. It is often
       referred to as a data structure server since keys can contain strings, hashes,
       lists, sets and sorted sets.
-    digest: d36512aa45eb25a3341d47cce9cb99e7151f4e826956a12509093c672ee4fdca
+    digest: f735dda080c01aeef48d2609c49ee91c074f3425c01ed7be227fc4fcfc45ce79
     home: https://github.com/bitnami/charts/tree/main/bitnami/redis
     icon: https://bitnami.com/assets/stacks/redis/img/redis-stack-220x234.png
     keywords:
@@ -238,7 +256,7 @@ entries:
   victoria-metrics-k8s-stack:
   - apiVersion: v2
     appVersion: 1.87.1
-    created: "2023-02-19T17:09:52.536203534Z"
+    created: "2023-02-20T14:05:17.173113689Z"
     dependencies:
     - condition: victoria-metrics-operator.enabled
       name: victoria-metrics-operator
@@ -258,7 +276,7 @@ entries:
       version: 6.44.*
     description: Kubernetes monitoring on VictoriaMetrics stack. Includes VictoriaMetrics
       Operator, Grafana dashboards, ServiceScrapes and VMRules
-    digest: 30a05a0e58654eefa47582af15bfe2f431c04d355804211170d164ee509bef7d
+    digest: 1b9a93faeac6a9126cf4ea6d0534d420db44e83375532dac4644e5087dcafc17
     name: victoria-metrics-k8s-stack
     sources:
     - https://github.com/VictoriaMetrics/helm-charts
@@ -266,4 +284,4 @@ entries:
     urls:
     - https://evopss.github.io/charts/victoria-metrics-k8s-stack-0.14.8.tgz
     version: 0.14.8
-generated: "2023-02-19T17:09:52.45332579Z"
+generated: "2023-02-20T14:05:17.072097144Z"
