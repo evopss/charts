@@ -2,7 +2,7 @@ apiVersion: v2
 appVersion: v1.10.11
 dependencies:
 - name: library
-  repository: file://../charts/library
+  repository: file://../v1.10.11/charts/library
   version: 0.0.1
 description: File, Block, and Object Storage Services for your Cloud-Native Environment
 icon: https://rook.io/images/rook-logo.svg
