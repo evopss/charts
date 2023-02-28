@@ -1,0 +1,66 @@
+image:
+  repository: traefik
+  tag: "v2.9.7"
+  pullPolicy: IfNotPresent
+hub:
+  enabled: false
+deployment:
+  enabled: true
+  kind: Deployment
+  terminationGracePeriodSeconds: 60
+  minReadySeconds: 0
+  shareProcessNamespace: false
+podDisruptionBudget:
+  enabled: false
+ingressClass:
+  enabled: true
+  isDefaultClass: true
+ingressRoute:
+  dashboard:
+    enabled: true
+    matchRule: Host(`traefik-dashboard.infra.evopss.net`) && PathPrefix(`/dashboard`) || Host(`traefik-dashboard.infra.evopss.net`) && PathPrefix(`/api`)
+    entryPoints: ["web"]
+updateStrategy:
+  type: RollingUpdate
+  rollingUpdate:
+    maxUnavailable: 0
+    maxSurge: 1
+providers:
+  kubernetesCRD:
+    enabled: true
+    allowCrossNamespace: false
+    allowExternalNameServices: false
+    allowEmptyServices: false
+  kubernetesIngress:
+    enabled: true
+    allowExternalNameServices: false
+    allowEmptyServices: false
+logs:
+  general:
+    format: json
+    level: INFO
+  access:
+    enabled: false
+metrics:
+  prometheus:
+    entryPoint: metrics
+    addEntryPointsLabels: false
+    addRoutersLabels: true
+    addServicesLabels: false
+    buckets: "0.5,1.0,2.5"
+tracing: {}
+globalArguments:
+  - "--global.checknewversion"
+  - "--global.sendanonymoususage"
+additionalArguments: []
+ports:
+  web:
+    port: 8000
+    expose: true
+    exposedPort: 80
+    nodePort: 30080
+service:
+  enabled: true
+  type: NodePort
+autoscaling:
+  enabled: false
